@@ -40,23 +40,16 @@ function writeText() {
 </script>
 
 <template>
-  <div class="container">
     <div class="welcomeDiv">
       <h1 id="welcomeText"></h1>
       <h2 id="roleText"></h2>
-    </div>
-    <ProjectsBar :rendered="roleTextFinished" />
   </div> 
+  <ProjectsBar :rendered="roleTextFinished" />
 </template>
 
 <style>
-.container{
-  display: flex;
-  column-gap: 40px;
-}
-
 .welcomeDiv{
   height: 500px;
-  width: 500px;
+  width: 600px;
 }
 </style>
