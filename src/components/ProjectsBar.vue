@@ -5,11 +5,6 @@ const dataProps = defineProps({
 })
 
 const item = ref([{name: 'Project 1'}, {name: 'Project 2'}, {name: 'Project 3'}]);
-
-const anotherTransition = ref(false);
-function setTransitionState() {
-  anotherTransition.value = !anotherTransition.value;
-}
 </script>
 
 <template>
@@ -18,7 +13,7 @@ function setTransitionState() {
       <div v-if="rendered">
         <h2>Projects</h2>
         <TransitionGroup name="projectList" tag="ul">
-          <li v-for="project in item">
+          <li class="projectName" v-for="project in item">
             {{ project.name }}
           </li>
         </TransitionGroup>
