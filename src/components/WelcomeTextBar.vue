@@ -12,8 +12,8 @@ const roleTextFinished = ref(false);
 var arrowDownShow = ref(false);
 
 window.onload = function() {
-  document.body.style.overflow = 'hidden';
   writeText();
+  document.body.style.overflow = 'hidden';
 }
 
 function writeText() {
@@ -39,8 +39,8 @@ function writeText() {
   else {
       setTimeout(() => {
         roleTextFinished.value = true;
-        document.body.style.overflow = '';
         arrowDownShow.value = true;
+        document.body.style.overflow = '';
       }, 1000);
     }
   }
@@ -63,6 +63,11 @@ function writeText() {
 </template>
 
 <style>
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 .v-enter-active,
 .v-leave-active {
   transition: opacity 1s ease;
@@ -77,7 +82,8 @@ function writeText() {
   align-items: center;
   margin-left: 350px;
   margin-right: 350px;
-  margin-top : 50px;
+  margin-top : 40px;
+  margin-bottom : 50px;
   opacity: 0.5;
 }
 

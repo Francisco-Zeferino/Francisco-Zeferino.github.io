@@ -4,7 +4,7 @@ const dataProps = defineProps({
   rendered : Boolean
 })
 
-const item = ref([{name: 'Project 1'}, {name: 'Project 2'}, {name: 'Project 3'}]);
+const item = ref([{name: 'Minishell'}, {name: 'Cub3D'}, {name: ''}]);
 </script>
 
 <template>
