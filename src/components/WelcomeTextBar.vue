@@ -1,6 +1,5 @@
 <script setup>
 import { Transition, ref } from 'vue';
-import ProjectsBar from './ProjectsBar.vue';
 import ProjectsCard from './ProjectsCards.vue'
 
 const welcomeText = ref('Welcome to my Portfolio!');
@@ -65,6 +64,7 @@ function writeText() {
 
 <style>
 html {
+  scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }

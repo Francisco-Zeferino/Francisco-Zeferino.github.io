@@ -6,38 +6,50 @@ import {ref} from 'vue';
     <div class="projectsSection">
         <div class="card">
             <div class="container">
-                <h4>1</h4>
-                <p>2</p>
+                <h3>Ola</h3>
+                <p>Description</p>
             </div>
         </div>
         <div class="card">
             <div class="container">
-                <h4>1</h4>
-                <p>2</p>
+                <h3>Ola</h3>
+                <p>Description</p>
             </div>
         </div>
         <div class="card">
             <div class="container">
-                <h4>1</h4>
-                <p>2</p>
+                <h3>Ola</h3>
+                <p>Description</p>
             </div>
         </div>
         <div class="card">
             <div class="container">
-                <h4>1</h4>
-                <p>2</p>
+                <h3>Ola</h3>
+                <p>Description</p>
             </div>
         </div>
         <div class="card">
             <div class="container">
-                <h4>1</h4>
-                <p>2</p>
+                <h3>Ola</h3>
+                <p>Description</p>
             </div>
         </div>
         <div class="card">
             <div class="container">
-                <h4>1</h4>
-                <p>2</p>
+                <h3>Ola</h3>
+                <p>Description</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <h3>Ola</h3>
+                <p>Description</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <h3>Ola</h3>
+                <p>Description</p>
             </div>
         </div>
     </div>
@@ -48,12 +60,14 @@ import {ref} from 'vue';
   display:flex;
   justify-content: center;
   align-items:flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  height: 300px;
+  height: 700px;
 }
 
 .card {
-    display: inline-block;
+    display: flex;
     background-color: white;
     text-align: left;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
