@@ -1,21 +1,14 @@
 <script setup>
-import {ref} from 'vue';
 const dataProps = defineProps({
   rendered : Boolean
 })
-
-const item = ref([{name: 'Minishell'}, {name: 'Cub3D'}, {name: ''}]);
 </script>
 
 <template>
   <div class="projectsDiv">
     <Transition>
       <div v-if="rendered">
-        <h2>Projects</h2>
-        <TransitionGroup name="projectList" tag="ul">
-          <li class="projectName" v-for="project in item">
-            {{ project.name }}
-          </li>
+        <TransitionGroup name="projectList" tag="div">
         </TransitionGroup>
       </div>
     </Transition>
@@ -24,8 +17,8 @@ const item = ref([{name: 'Minishell'}, {name: 'Cub3D'}, {name: ''}]);
 
 <style>
 .projectsDiv {
-  width: 400px;
-  height: 400px;
+  width: 900px;
+  height: 900px;
 }
 
 .projectList-enter-active,

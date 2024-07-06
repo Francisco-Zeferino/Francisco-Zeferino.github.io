@@ -1,7 +1,7 @@
 <script setup>
 import { Transition, ref } from 'vue';
-import {useScrollLock } from '@vueuse/core';
 import ProjectsBar from './ProjectsBar.vue';
+import ProjectsCard from './ProjectsCards.vue'
 
 const welcomeText = ref('Welcome to my Portfolio!');
 const roleText = ref('My name is Francisco and I am a Software Engineer student at 42 Lisboa');
@@ -57,7 +57,8 @@ function writeText() {
             <img src="../assets/arrow-down.png" alt="arrow-down" width="25px" height="25px" class="arrow-down"/>
           </div>
         </Transition>
-        <ProjectsBar :rendered="roleTextFinished"/>
+        <!--<ProjectsBar :rendered="roleTextFinished"/>-->
+        <ProjectsCard v-if="roleTextFinished"/>
       </div>
     </div> 
 </template>
