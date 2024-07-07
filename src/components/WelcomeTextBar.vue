@@ -1,10 +1,13 @@
 <script setup>
 import { Transition, ref } from 'vue';
-import ProjectsCard from './ProjectsCards.vue'
+import ProjectsCards from './ProjectsCards.vue'
 
 const welcomeText = ref('Welcome to my Portfolio!');
 const roleText = ref('My name is Francisco and I am a Software Engineer student at 42 Lisboa');
 const i = ref(0);
+
+let sections = document.querySelectorAll('projectsSection');
+let currentSection = 0;
 
 const welcomeTextFinished = ref(false);
 const roleTextFinished = ref(false);
@@ -56,8 +59,7 @@ function writeText() {
             <img src="../assets/arrow-down.png" alt="arrow-down" width="25px" height="25px" class="arrow-down"/>
           </div>
         </Transition>
-        <!--<ProjectsBar :rendered="roleTextFinished"/>-->
-        <ProjectsCard v-if="roleTextFinished"/>
+        <ProjectsCards/>
       </div>
     </div> 
 </template>
@@ -89,9 +91,9 @@ html {
 }
 
 .about-me{
-      width: 750px;
-      height: 100px;
-      position: absolute;
+  width: 750px;
+  height: 100px;
+  position: absolute;
 }
 
 #welcomeText{

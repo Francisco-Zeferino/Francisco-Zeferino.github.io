@@ -57,13 +57,13 @@ import {ref} from 'vue';
 
 <style>
 .projectsSection{
-  display:flex;
-  justify-content: center;
-  align-items:flex-start;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 700px;
+    margin-top: 700px ;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 500px; /* Full viewport height */
 }
 
 .card {
@@ -72,7 +72,6 @@ import {ref} from 'vue';
     text-align: left;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 350px;
     border-radius: 5px;
     margin-right: 25px;
     margin-top: 25px;    
@@ -83,6 +82,7 @@ import {ref} from 'vue';
 }
 
 .container {
+  width: 200px;
   color: black;
   padding: 2px 16px;
 }
