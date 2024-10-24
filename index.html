@@ -1,0 +1,72 @@
+<head>
+    <title>Francisco Zeferino</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var dropdowns = document.querySelectorAll('.dropdown-btn');
+        dropdowns.forEach(function(dropdown) {
+            dropdown.addEventListener('click', function() {
+                var card = this.parentElement;
+                card.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+<body>
+    <div class="container">
+        <div id="intro">
+            <h1>Francisco Zeferino</h1>
+            <h2>Software Developer</h2>
+        </div>
+        <div id="about">
+            <p>Hi, I'm Francisco Zeferino, a software developer with a passion for creating and developing software. I have experience in developing web applications, mobile applications, and desktop applications. I am always looking for new challenges and opportunities to learn and grow as a developer.</p>
+            <div id="about-education">
+                <h3>Education</h3>
+                <p>42 Lisboa, Software Engineering</p>
+                <div id="about-education-projects">
+                    <ul>
+                        <li class="card">
+                            <button class="dropdown-btn">Minishell</button>
+                            <div class="dropdown-content">
+                                <p>Details about Minishell project...</p>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <button class="dropdown-btn">Philosophers</button>
+                            <div class="dropdown-content">
+                                <p>Details about Philosophers project...</p>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <button class="dropdown-btn">IRC</button>
+                            <div class="dropdown-content">
+                                <p>Details about IRC project...</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="about-experience">
+                <h3>Professional experience</h3>
+                <p>Company 1 - Web Developer</p>
+                <div id="about-experience-company">
+                    <ul>
+                        <p>Developed web applications using HTML, CSS, and JavaScript</p>
+                        <p>Worked with a team of developers to create and maintain web applications</p>
+                        <p>Tested and debugged web applications to ensure they met quality standards</p>
+                    </ul>
+                </div>
+            </div>
+            <div id ="about-projects">
+                <h3>Some projects I've developed</h3>
+                <div id="about-projects-description">
+                    <p class="card"> Project 1 </p>
+                    <p class="card"> Project 2 </p>
+                    <p class="card"> Project 3 </p>
+                </div>
+            </div>
+        </div>
+</body>
