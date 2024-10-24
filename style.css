@@ -80,13 +80,13 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-top: 10px;
-    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    transition: max-height 1s ease-out, padding 1s ease-out;
 }
 
 .card.active .dropdown-content {
-    max-height: 150px; /* Adjust this value based on your content */
-    padding: 10px;
-    transition: max-height 0.5s ease-in, padding 0.5s ease-in;
+    max-height: 100px; /* Adjust this value based on your content */
+    padding: 15px;
+    transition: max-height 1s ease-in, padding 1s ease-in;
 }
 
 ul {
