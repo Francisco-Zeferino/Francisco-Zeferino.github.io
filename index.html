@@ -11,125 +11,151 @@
 </head>
 
 <body>
-  <div>
-    <div class="container text-left mt-5">
-      <div class="row">
-        <div class="w-75">
-          <div>
-            <div class="animate__animated animate__fadeInUp">
-              <h1>Francisco Zeferino</h1>
-              <h4 class="mt-4">Software Engineer Student @42 Lisboa</h4>
-              <p class="mt-4">Hi! I'm Francisco Zeferino, a passionate Software Engineering student at 42 Lisboa. With a
-                strong foundation in C++ and C, I am dedicated to mastering the art of coding and developing innovative
-                solutions.</p>
-              <p class="mt-4">Currently, I am working on my final university project, which has been an exciting journey
-                into the world of Web development. I am always eager to learn new technologies and take on challenging
-                projects.</p>
-              <p class="mt-4">In my free time, I enjoy exploring new programming languages. Let's connect and create
-                something amazing together!</p>
+  <section class="hero d-flex justify-content-center align-items-center text-center ">
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div>
+          <div class="animate__animated animate__fadeInUp">
+            <h1>Francisco Zeferino</h1>
+            <h4 class="mt-4">Software Engineer Student @42 Lisboa</h4>
+            <p class="mt-4">Hi! I'm Francisco Zeferino, a passionate Software Engineering student at 42 Lisboa. With
+              a
+              strong foundation in C++ and C, I am dedicated to mastering the art of coding and developing
+              innovative
+              solutions.</p>
+            <p class="mt-4">Currently, I am working on my final university project, which has been an exciting
+              journey
+              into the world of Web development. I am always eager to learn new technologies and take on challenging
+              projects.</p>
+            <p class="mt-4">In my free time, I enjoy exploring new programming languages. Let's connect and create
+              something amazing together!</p>
+          </div>
+          <div class="btn-group mt-3 animate__animated animate__fadeInLeft" role="group" aria-label="button group">
+            <a class="btn btn-dark" href="https://github.com/Francisco-Zeferino" role="button">Github</a>
+            <button type="button" class="btn btn-primary">LinkedIn</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h1 class="mb-4 mt-5">School</h1>
+      <div class="row justify-content-left mt-5">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="animate__animated animate__fadeInUp card 42Card">
+            <div class="card-body">
+              <h5 class="card-title">42 Lisboa</h5>
+              <h7> - Software Engineering</h7>
+              <p class="card-text mt-2">Mock Text</p>
             </div>
-            <div class="btn-group mt-3 animate__animated animate__fadeInLeft" role="group" aria-label="button group">
-              <a class="btn btn-dark" href="https://github.com/Francisco-Zeferino" role="button">Github</a>
-              <button type="button" class="btn btn-primary">LinkedIn</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="animate__animated animate__fadeInUp card HsCard">
+            <div class="card-body">
+              <h5 class="card-title">Escola Secondaria José Saramago</h5>
+              <h7> - High School</h7>
+              <p class="card-text mt-2">Mock Text</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col">
-          <div class="animate__animated animate__fadeInUp">
-            <h1>Projects</h1>
-          </div>
-          <div class="container mt-5">
-            <!-- Project Cards-->
-            <div class="row grid gap-3">
-              <div class="card col animate__animated animate__fadeInUp" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Minishell</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdropMinishell">More about project</button>
-                </div>
+  </section>
+  <div class="container mt-5">
+    <div class="row mt-5">
+      <div class="col">
+        <div class="animate__animated animate__fadeInUp">
+          <h1>Projects</h1>
+        </div>
+        <div class="container mt-5">
+          <!-- Project Cards-->
+          <div class="row grid gap-3">
+            <div class="card col animate__animated animate__fadeInUp" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Minishell</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdropMinishell">More about project</button>
               </div>
-              <div class="card col animate__animated animate__fadeInUp" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Philosophers</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdropPhilo">More about project</button>
-                </div>
-              </div>
-              <div class="card col animate__animated animate__fadeInUp" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">IRC</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdropIRC">More about project</button>
-                </div>
-              </div>
-              <!---->
-              <!--Modals Contents-->
-              <div class="modal fade" id="staticBackdropMinishell" data-bs-backdrop="static" data-bs-keyboard="false"
-                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Minishell</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      About this project!!!
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal fade" id="staticBackdropPhilo" data-bs-backdrop="static" data-bs-keyboard="false"
-                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Philosophers</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      About this project!!!
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal fade" id="staticBackdropIRC" data-bs-backdrop="static" data-bs-keyboard="false"
-                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="staticBackdropLabel">IRC</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      About this project!!!
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Understood</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!---->
             </div>
+            <div class="card col animate__animated animate__fadeInUp" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Philosophers</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdropPhilo">More about project</button>
+              </div>
+            </div>
+            <div class="card col animate__animated animate__fadeInUp" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">IRC</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdropIRC">More about project</button>
+              </div>
+            </div>
+            <!---->
+            <!--Modals Contents-->
+            <div class="modal fade" id="staticBackdropMinishell" data-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Minishell</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    About this project!!!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="staticBackdropPhilo" data-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Philosophers</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    About this project!!!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="staticBackdropIRC" data-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">IRC</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    About this project!!!
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---->
           </div>
         </div>
       </div>
